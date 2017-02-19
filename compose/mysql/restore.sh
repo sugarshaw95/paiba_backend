@@ -37,4 +37,5 @@ echo "-------------------------"
 
 # restore the database
 echo "restoring database $MYSQL_USER"
-gunzip -c $BACKUPFILE | mysql --user=$MYSQL_USER --password=$MYSQL_PASSWORD $MYSQL_USER
+gunzip -c $BACKUPFILE | mysql -u $MYSQL_USER -p $MYSQL_USER
+#$MYSQL_PASSWORD
