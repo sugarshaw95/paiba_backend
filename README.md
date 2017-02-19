@@ -1,17 +1,17 @@
-#Local#
-##Prequisite##
+#Local
+##Prequisite
   * Python 3.6.0
   	* virtualenv 15.1.0
   * MariaDB 10.1.21
 
-##Build##
-###Development environment###
+##Build
+###Development environment
  `make dev`
-###Test environment###
+###Test environment
   `make test`
-###Clean###
+###Clean
   `make clean`
-##Activate Environment##
+##Activate Environment
   `source ./venv/bin/activate`
-##Deactivate Environment##
+##Deactivate Environment
   `deactive`
