@@ -14,6 +14,6 @@ echo "creating backup"
 echo "---------------"
 
 FILENAME=backup_$(date +'%Y_%m_%dT%H_%M_%S').sql.gz /
-mysqldump --single-transaction --flush-logs --master-data=2 -u $MYSQL_USER -p --all-databases | gzip > /backups/$FILENAME
+mysqldump --single-transaction --flush-logs --master-data=2 -u $MYSQL_USER -p $MYSQL_USER  | gzip > /backups/$FILENAME
 #$MYSQL_PASSWORD
 echo "successfully created backup $FILENAME"
