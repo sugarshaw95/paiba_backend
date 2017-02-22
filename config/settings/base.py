@@ -48,10 +48,10 @@ THIRD_PARTY_APPS = [
     'allauth',  # registration
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
-    'allauth.socialaccount.providers.baidu',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.weibo',
-    'allauth.socialaccount.providers.weixin',
+    'allauth.socialaccount.providers.baidu',  # registration
+    'allauth.socialaccount.providers.google',  # registration
+    'allauth.socialaccount.providers.weibo',  # registration
+    'allauth.socialaccount.providers.weixin',  # registration
 ]
 
 # Apps specific for this project go here.
