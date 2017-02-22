@@ -84,11 +84,11 @@ CSRF_COOKIE_SECURE = True
 CSRF_COOKIE_HTTPONLY = True
 X_FRAME_OPTIONS = 'DENY'
 
-# SITE CONFIGURATION TODO
+# SITE CONFIGURATION
 # ------------------------------------------------------------------------------
 # Hosts/domain names that are valid for this site
 # See https://docs.djangoproject.com/en/1.10/ref/settings/#allowed-hosts
-#ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['.paiba.cn', ])
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['123.207.126.160', ])
 # END SITE CONFIGURATION
 
 INSTALLED_APPS += ['gunicorn', ]
