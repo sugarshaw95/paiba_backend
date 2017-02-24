@@ -20,7 +20,7 @@ sudo openssl dhparam 2048 -out /etc/nginx/cert/dhparam.pem
 sudo certbot certonly --agree-tos --webroot -w $script_dir -d 123.207.126.160
 
 echo configure gunicorn
-sudo cp ./gumicorn-paiba.service /etc/systemd/system/gunicorn-paiba.service
+sudo cp ./gunicorn-paiba.service /etc/systemd/system/gunicorn-paiba.service
 sudo sed -ie 's/PATH/$script_dir/g' /etc/systemd/system/gunicorn-paiba.service
 
 sudo systemctl start gunicorn-paiba
