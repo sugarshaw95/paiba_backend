@@ -9,7 +9,6 @@ fi
 NOW=$(date +"%m-%d-%Y-%H-%M")
 
 echo configure nginx
-sudo cp /etc/nginx/nginx.conf /etc/nginx/nginx.conf.old
 sudo cp ./nginx.conf /etc/nginx/nginx.conf
 sudo sed -ie "s/PATH/${script_dir}/g" /etc/nginx/nginx.conf
 sudo cat /etc/nginx/nginx.conf
