@@ -1,12 +1,12 @@
 #Local
-##Prequisite
+##Prequisites
   * Python 3.6.0
   	* virtualenv 15.1.0
   * MariaDB 10.1.21
 
 ##Build
 ###Development environment
- `make dev`
+  `make dev`
 ###Test environment
   `make test`
 ###Clean
