@@ -8,3 +8,6 @@
 
 #Deploy
   Run deploy.sh
+  python manage.py collectstatic
+  python manage.py makemigration
+  python manage.py migrate
